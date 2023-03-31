@@ -6,20 +6,20 @@ public class SherlockCase {
         int T = sc.nextInt();
         if(( T < 1) || (T > 100 ))
         {
-            System.out.println("Condition Not Satisfy");
+            System.out.println("Condition Not Satisfied, It should between 1 to 100");
             return ;
         }
         while (T-- > 0) {
             String pattern = sc.next();
             if((pattern.length() < 1) || (pattern.length() >1000))
             {
-                System.out.println("Pattern should be between 1 to 1000");
+                System.out.println("Condition Not Satisfied, Pattern should be between 1 to 1000");
                 return;
             }
             String text = sc.next();
             if((text.length() < 1) || (text.length() >100000))
             {
-                System.out.println("Text should be between 1 to 100000");
+                System.out.println("Condition Not Satisfied, Text should be between 1 to 100000");
                 return;
             }
             boolean found = false;
